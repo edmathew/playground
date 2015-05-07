@@ -1,0 +1,19 @@
+﻿buildscript {
+    repositories {
+       // mavenCentral()
+        maven {
+            url "http://repo1.maven.org/maven2"
+        }
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+jar {
+    baseName = 'fizzBuzzOneLiner'
+    version =  '0.0.1-snapshot'
+}
+
+mainClassName = "fizzbuzz.FizzBuzzOneLiner"
