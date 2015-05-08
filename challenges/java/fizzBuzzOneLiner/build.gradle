@@ -1,4 +1,4 @@
-﻿buildscript {
+buildscript {
     repositories {
        // mavenCentral()
         maven {
@@ -17,3 +17,4 @@ jar {
 }
 
 mainClassName = "fizzbuzz.FizzBuzzOneLiner"
+compileJava.options.encoding = 'UTF-8'
