@@ -59,10 +59,10 @@ class RPSLSTest(unittest.TestCase):
 		sys.stdout = StringIO()
  
 		#Second execution
-		rpsls.rpsls("Test")
+		rpsls.rpsls("Spock")
 		first_line = sys.stdout.getvalue()
 		
-		self.assertEquals(first_line[:1], "\n")
+		self.assertEquals(first_line[-2:], "\n\n")
 		
 	def test_victory_rules(self):
 		"""

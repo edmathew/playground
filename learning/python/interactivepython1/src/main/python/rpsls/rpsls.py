@@ -11,8 +11,6 @@ import random
 # 4 - scissors
 
 
-rpsls_counter = 0
-
 def name_to_number(name):
     """
      Converts a rpsls name into a number between 0 and 4
@@ -54,12 +52,6 @@ def number_to_name(number):
         
 
 def rpsls(player_choice): 
-    global rpsls_counter
-    if rpsls_counter > 0:
-        print ""
-        
-    rpsls_counter += 1
-
     player_number  = name_to_number(player_choice)
     cpu_number = random.randrange(0, 5)
 
@@ -71,6 +63,7 @@ def rpsls(player_choice):
     print "Computer chooses " + number_to_name(cpu_number)
     
     rpsls_compute_winner(player_number, cpu_number)
+    print ""    
     
     
 def rpsls_compute_winner(player_number, cpu_number):
