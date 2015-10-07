@@ -48,7 +48,11 @@ def new_game():
     playerright_score = 0
     playerleft_score = 0
 
-    spawn_ball(LEFT)
+    if random.randrange(0,2) == 0:
+        spawn_ball(LEFT)
+    else:
+        spawn_ball(RIGHT)
+    
 
 def check_wall_colisions():
     """
@@ -79,7 +83,7 @@ def check_pad_colisions():
             ball_vel[1] = ball_vel[1] * 1.10
         else:
             playerleft_score += 1
-            spawn_ball(RIGHT)
+            spawn_ball(LEFT)
         
 def set_paddle_pos(current_pos, current_vel):
     """
