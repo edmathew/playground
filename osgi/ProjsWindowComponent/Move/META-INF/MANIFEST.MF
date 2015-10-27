@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Move
+Bundle-SymbolicName: move
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: move.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: core.model,
+ core.services,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
