@@ -1,2 +1,4 @@
 /learning/scala/.nb-gradle/
 /learning/scala/build/
+.metadata
+.project

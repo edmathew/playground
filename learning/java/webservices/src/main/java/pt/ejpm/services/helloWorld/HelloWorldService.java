@@ -1,5 +1,5 @@
 package pt.ejpm.services.helloWorld;
 
-public class HelloWorld {
-
+public class HelloWorldService {
+    
 }
