@@ -2,3 +2,8 @@
 /learning/scala/build/
 .metadata
 .project
+/learning/java/hibernate/target/
+
+**/bin
+**/build
+**/.gradle
