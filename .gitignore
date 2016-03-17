@@ -1,9 +1,8 @@
-/learning/scala/.nb-gradle/
-/learning/scala/build/
 .metadata
 .project
-/learning/java/hibernate/target/
-
+ 
 **/bin
 **/build
+**/target
 **/.gradle
+**/.nb-gradle 

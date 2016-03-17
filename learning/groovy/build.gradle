@@ -1,0 +1,20 @@
+def groovyVersion = '2.4.6'
+def junitVersion = '4.12'
+ext.mainClass = '02-fizz-buzz'
+
+apply plugin: 'groovy'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    testCompile "junit:junit:${junitVersion}"
+}
