@@ -1,6 +1,7 @@
 package com.ejpm.euler.problem.impl;
 
 import com.ejpm.euler.problem.Problem;
+import static com.ejpm.euler.math.SequencesSum.sumAllDivisibleBy;
 
 /**
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we
@@ -14,22 +15,11 @@ public class Problem1 implements Problem {
 
     @Override
     public void execute() {
-        System.out.println("The sum of all the multiples of 3 or 5 below 1000 is " + sumAllNaturals());
+        System.out.println("Problem 1:\t The sum of all the multiples of 3 or 5 below 1000 is " + sumAllMultiplesOf3Or5BellowN(1000));
     }
 
-    public int sumAllNaturals() {
-        int soma = 0;
-        int count = 1;
-
-        do {
-            if (count % 3 == 0 || count % 5 == 0) {
-                soma = soma + count;
-            }
-
-            count++;
-        } while (count < 1000);
-        
-        return soma;
+    public int sumAllMultiplesOf3Or5BellowN(final int n){
+        return sumAllDivisibleBy(3, n) + sumAllDivisibleBy(5, n) - sumAllDivisibleBy(15, n);
     }
 
 }
