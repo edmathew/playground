@@ -6,3 +6,4 @@
 **/target
 **/.gradle
 **/.nb-gradle
+/euler/java/nbproject/

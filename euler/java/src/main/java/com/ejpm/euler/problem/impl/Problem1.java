@@ -14,10 +14,22 @@ public class Problem1 implements Problem {
 
     @Override
     public void execute() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("The sum of all the multiples of 3 or 5 below 1000 is " + sumAllNaturals());
     }
-    
-    
-    
+
+    public int sumAllNaturals() {
+        int soma = 0;
+        int count = 1;
+
+        do {
+            if (count % 3 == 0 || count % 5 == 0) {
+                soma = soma + count;
+            }
+
+            count++;
+        } while (count < 1000);
+        
+        return soma;
+    }
 
 }
