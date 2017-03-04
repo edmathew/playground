@@ -24,7 +24,7 @@ public class Problem3 implements Problem {
 			
 		}while(num != 1);
 		
-		System.out.print("Largest Prime Factor: "+maior);
+		System.out.println("Largest Prime Factor: "+maior);
     }
 
 	public static boolean ePrimo(int num){
