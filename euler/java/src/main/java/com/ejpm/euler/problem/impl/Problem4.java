@@ -24,7 +24,7 @@ public class Problem4 implements Problem {
         int result = 0;
 
         for (int i = top - 1; i >= bottom; i--) {
-            for (int j = top - 1; j >= bottom; j--) {
+            for (int j = top - 1; j >= i; j--) {
                 final int product = i * j;
                 if (product > result) {
                     if (PalindromeUtils.isPalindrome(product)) {
