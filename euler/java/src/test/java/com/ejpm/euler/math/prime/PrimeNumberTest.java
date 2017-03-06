@@ -1,5 +1,6 @@
-package com.ejpm.euler.math;
+package com.ejpm.euler.math.prime;
 
+import com.ejpm.euler.math.prime.PrimeNumber;
 import java.util.Arrays;
 import java.util.Collection;
 import static org.hamcrest.core.Is.is;
