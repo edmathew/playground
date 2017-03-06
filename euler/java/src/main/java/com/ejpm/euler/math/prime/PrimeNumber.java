@@ -1,4 +1,7 @@
-package com.ejpm.euler.math;
+package com.ejpm.euler.math.prime;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -21,6 +24,25 @@ public class PrimeNumber {
         return true;
      }
     
+    public static int[] primeFactorization(final long number){
+        final List<Integer> factors = new ArrayList<>();
+        final PrimeSequence sequence = new PrimeSequence();
+        
+        long n = number;
+        
+        while(n > 1){
+            int prime = sequence.getNext();
+            
+            if(n % prime == 0){
+                factors.add(prime);
+                while(n % prime == 0){
+                    n = n / prime;
+                }
+            }
+        }
+        
+        return factors.stream().mapToInt(i-> i).toArray();
+    }
  
     
 }
