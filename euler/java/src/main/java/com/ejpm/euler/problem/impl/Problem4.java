@@ -12,8 +12,8 @@ public class Problem4 implements Problem {
 
     @Override
     public void execute() {
-        System.out.println("Problem 4:\t The largest\n"
-                + " * palindrome made from the product of two 3-digit number " + calcLargestProductPalindrome(3));
+        System.out.println("Problem 4:\t The largest palindrome made"
+                + " from the product of two 3-digit number " + calcLargestProductPalindrome(3));
 
     }
 
