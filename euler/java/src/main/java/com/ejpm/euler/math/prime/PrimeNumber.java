@@ -13,13 +13,20 @@ public class PrimeNumber {
         if((number != 2 && number % 2 == 0) || number == 1)
             return false;
         
-        int divider = number;
+        if(number != 3 && number % 3 == 0)
+            return false;
         
-        do{
-            if(number % divider == 0 && divider != number)
+        double r = Math.floor(Math.sqrt(number));
+        
+        int f = 5;
+        
+        while(f <= r){
+            if(number % f == 0)
                 return false;
-            divider = divider - 2;
-        }while(divider > 1);
+            if(number % (f +2) == 0)
+                return false;
+            f += 6;
+        }
         
         return true;
      }
