@@ -27,6 +27,6 @@ public class Problem8Test {
 
      @Test
     public void calcGreatestAdjcentProductWithAdjacent13() {
-        assertThat(problem.calcGreatestAdjcentProduct(13), is(equalTo(5832L)));
+        assertThat(problem.calcGreatestAdjcentProduct(13), is(equalTo(23514624000L)));
     }
 }
