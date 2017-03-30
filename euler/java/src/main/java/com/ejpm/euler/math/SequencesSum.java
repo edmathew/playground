@@ -15,8 +15,8 @@ public class SequencesSum {
      * @param top
      * @return 
      */
-    public static int sumAllDivisibleBy(final int divisible, final int top){
-        final int qtd = (top - 1)/divisible;
+    public static long sumAllDivisibleBy(final int divisible, final long top){
+        final long qtd = (top - 1)/divisible;
         
         return divisible * (qtd * (qtd + 1)) / 2;
     }
