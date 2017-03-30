@@ -27,7 +27,7 @@ public class Problem2 implements Problem {
      * Over 9000 implementation with BigDecimal. Not necessary. (The input is an int)
      * @param top
      */
-    public BigInteger sumFibonnaciEvenTerms(final int top){
+    public BigInteger sumFibonnaciEvenTerms(final long top){
         final FibonacciSequence sequence = new FibonacciSequence();
         final BigInteger biTop = BigInteger.valueOf(top);
         final BigInteger two = BigInteger.valueOf(2);
