@@ -23,12 +23,12 @@ public class Problem1Test {
 
     @Test
     public void theSumOfAll3and5MultipliesUnder10Is23() {
-        assertThat(problem.sumAllMultiplesOf3Or5BellowN(10), is(equalTo(23)));
+        assertThat(problem.sumAllMultiplesOf3Or5BellowN(10), is(equalTo(23L)));
     }
 
     @Test
     public void theSumOfAll3and5MultipliesUnder1000Is233168() {
-        assertThat(problem.sumAllMultiplesOf3Or5BellowN(1000), is(equalTo(233168)));
+        assertThat(problem.sumAllMultiplesOf3Or5BellowN(1000), is(equalTo(233168L)));
     }
 
 }

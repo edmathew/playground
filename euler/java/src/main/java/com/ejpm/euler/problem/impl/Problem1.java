@@ -18,7 +18,7 @@ public class Problem1 implements Problem {
         System.out.println("Problem 1:\t The sum of all the multiples of 3 or 5 below 1000 is " + sumAllMultiplesOf3Or5BellowN(1000));
     }
 
-    public int sumAllMultiplesOf3Or5BellowN(final int n){
+    public long sumAllMultiplesOf3Or5BellowN(final long n){
         return sumAllDivisibleBy(3, n) + sumAllDivisibleBy(5, n) - sumAllDivisibleBy(15, n);
     }
 
