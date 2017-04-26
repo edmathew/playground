@@ -4,3 +4,4 @@ The solution must give the solution required by projecteuler
 platform and should pass all the hackerrank test cases (when applicable).
 
 The code is intended to be developed in a TDD fashion way.
+The first problems were refactored from some old code.
