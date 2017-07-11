@@ -1,7 +1,7 @@
-
 package com.ejpm.euler.math.factorization;
 
-import java.util.ArrayList;
+import com.ejpm.euler.math.prime.PrimeFactor;
+import com.ejpm.euler.math.prime.PrimeNumber;
 import java.util.List;
 
 /**
@@ -10,8 +10,13 @@ import java.util.List;
  */
 public class SimpleFactorizer {
 
-    public List<Integer> getFactors(final int n){
-       final List<Integer> factors = new ArrayList<>();
-       return factors;
+    public int getFactorsQuantity(final int n) {
+        final List<PrimeFactor> primeFactors = PrimeNumber.primeFactorization(n);
+        int factorsQuantity = 1;
+        factorsQuantity = primeFactors.stream()
+                .map((primeFactor) -> (primeFactor.getPrimeExponent() + 1))
+                .reduce(factorsQuantity, (accumulator, _item) -> accumulator * _item);
+
+        return factorsQuantity;
     }
 }
