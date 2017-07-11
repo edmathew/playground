@@ -31,8 +31,8 @@ public class PrimeNumber {
         return true;
      }
     
-    public static int[] primeFactorization(final long number){
-        final List<Integer> factors = new ArrayList<>();
+    public static List<PrimeFactor> primeFactorization(final long number){
+        final List<PrimeFactor> factors = new ArrayList<>();
         final PrimeSequence sequence = new PrimeSequence();
         
         long n = number;
@@ -41,14 +41,16 @@ public class PrimeNumber {
             int prime = sequence.getNext();
             
             if(n % prime == 0){
-                factors.add(prime);
+                int exponent = 0;
                 while(n % prime == 0){
                     n = n / prime;
+                    exponent ++;
                 }
+                factors.add(new PrimeFactor(prime, exponent));
             }
         }
         
-        return factors.stream().mapToInt(i-> i).toArray();
+        return factors;
     }
  
     
