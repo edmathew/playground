@@ -1,4 +1,4 @@
-package com.ejpm.smoothies;
+package com.ejpm.kata.qualified.smoothies;
 
 import java.util.*;
 

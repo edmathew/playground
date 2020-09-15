@@ -1,7 +1,8 @@
 package com.ejpm.data.structures;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+ import org.junit.Test;
+
 
 public class TreeTest {
 

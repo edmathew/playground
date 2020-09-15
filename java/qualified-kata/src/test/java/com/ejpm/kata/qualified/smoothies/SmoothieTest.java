@@ -1,4 +1,4 @@
-package com.ejpm.smoothies;
+package com.ejpm.kata.qualified.smoothies;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -16,8 +16,8 @@ public class SmoothieTest {
     assertEquals("banana,honey,mango,peach,pineapple",
             Smoothie.ingredients("Classic,-strawberry"));
   }
-  
-    @Test
+
+  @Test
   public void classicSmoothieWithoutStrawberryAndPeanut() {
     assertEquals("banana,honey,mango,peach,pineapple",
             Smoothie.ingredients("Classic,-strawberry,-peanut"));
