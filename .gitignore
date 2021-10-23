@@ -7,3 +7,5 @@
 **/.gradle
 **/.nb-gradle
 **/nbproject
+**/.idea
+
